@@ -15,21 +15,20 @@ This project will produce the chloropeth map to visualize the number of cases re
 * Python
 * Pandas
 * Pycharm
-* Matplotlib
-* FuncAnimation 
+* Plotly Express
+* Chloropeth visualisation
 
 ## Project Description:
 
 ### Prerequisites
   ### -> Dataset:
-  * API for accessing data from the Central website hosting all the data related to Covid-19 cases in each state of India (https://api.covid19india.org/)
+  * API for accessing data from the Central website hosting all the data related to Covid-19 cases in each state of India (https://api.covid19india.org/csv/latest/state_wise_daily.csv)
   
   ### -> Python Libraries:
-  * Python
   * Pandas
-  * Pycharm
-  * Matplotlib
-  * FuncAnimation
+  * Plotly Express
+  * Requests
+  * Dateutil
   
 ### Workflow:
 1. Using request module download the data using the API call from the website hosting the required data.
@@ -42,10 +41,10 @@ This project will produce the chloropeth map to visualize the number of cases re
 8. Save the animator object in the form of GIF format file.
 
 ## Expected Output:
- ![Covid-19_Timeseries chart](https://github.com/jitpavi/Time-Series-tracker-of-Covid-19-cases-in-INDIA/blob/master/Covid-19_Timeseries.gif)
+ ![Chloropeth Map - COVID-19 Cases in India](https://github.com/jitpavi/COVID-19-Week-Wise-Cases---Indian-State--Chloropeth-Visualisation/blob/master/Chloropeth%20Map%20-%20COVID-19%20Cases%20in%20India.JPG)
 
 ## Featured Notebooks/Analysis/Deliverables
-* [Covid-19 Cases in India_TimeSeries Tracker.py](https://github.com/jitpavi/Time-Series-tracker-of-Covid-19-cases-in-INDIA/blob/master/Covid-19%20Cases%20in%20India_TimeSeries%20Tracker.py)
+* [COVID-19-Week-Wise-Cases---Indian-State--Chloropeth-Visualisationv1.0.py](https://github.com/jitpavi/COVID-19-Week-Wise-Cases---Indian-State--Chloropeth-Visualisation/blob/master/COVID-19-Week-Wise-Cases---Indian-State--Chloropeth-Visualisation%20v1.0.py)
 
 ## Versioning
 Code version - v1.0
@@ -57,6 +56,8 @@ Code version - v1.0
 ## Acknowledgments:
 
 * https://api.covid19india.org/csv/latest/state_wise_daily.csv
+*	https://raw.githubusercontent.com/Subhash9325/GeoJson-Data-of-Indian-States/master/Indian_States
+
 
 ## References:
 

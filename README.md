@@ -1,14 +1,10 @@
-# COVID-19-Week-Wise-Cases---Indian-State---Chloropeth-Visulization
-This project will produce the chloropeth map to visualize the number of cases in each state of India starting from Week 10 of this year
-
-
-# Project Name - Time-Series-tracker-of-Covid-19-cases-in-INDIA
+# Project Name - COVID-19-Week-Wise-Cases---Indian-State---Chloropeth-Visulization
 
 #### -- Project Status: [Active]
-Tuning the frames and interval to get the perfect animation output
+In process of adding the data reported from the district level of each respective States of India.
 
 ## Project Intro/Objective:
-Project will produce a time-series chart to display 3 different plot of total number of Confirmed,total no.of recovered Cases and Total no. of Deaths respectively in India.
+This project will produce the chloropeth map to visualize the number of cases reported in each state of India starting from Week 10 of the year 2020.
 
 ### Methods Used:
 * Data Exploration
@@ -26,7 +22,7 @@ Project will produce a time-series chart to display 3 different plot of total nu
 
 ### Prerequisites
   ### -> Dataset:
-  * API for accessing data from the Central website hosting all the data related to cases(https://api.covid19india.org/)
+  * API for accessing data from the Central website hosting all the data related to Covid-19 cases in each state of India (https://api.covid19india.org/)
   
   ### -> Python Libraries:
   * Python
@@ -60,8 +56,8 @@ Code version - v1.0
 
 ## Acknowledgments:
 
-* https://api.covid19india.org/
+* https://api.covid19india.org/csv/latest/state_wise_daily.csv
 
 ## References:
 
-* https://towardsdatascience.com/learn-how-to-create-animated-graphs-in-python-fce780421afe
+* https://towardsdatascience.com/interactive-covid-19-visualizations-using-plotly-with-4-lines-of-code-fa33b334ab84

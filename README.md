@@ -2,6 +2,7 @@
 
 #### -- Project Status: [Active]
 In process of adding the data reported from the district level of each respective States of India.
+Also need to add the geocodes of Ladkah once it will available in public open source.
 
 ## Project Intro/Objective:
 This project will produce the chloropeth map to visualize the number of cases reported in each state of India starting from Week 10 of the year 2020. In the map there will be Week-wise Slider through which you can visualise the weekly status of each respective States and how much badly are they affected by the Covid-19 crisis.
@@ -50,7 +51,9 @@ This project will produce the chloropeth map to visualize the number of cases re
 
 ## Expected Output:
 **_As you can observe here, for every week starting from week 10 each state of India diplays the number of cases reported.
-For better understanding you can hover your mouse pointer over each state and see the figures_**
+For better understanding you can hover your mouse pointer over each state and see the figures.
+Due to lack of access to GEOCodes to Ladakh the data couldnt be displayed in the final output.
+_**
 
  ![Chloropeth Map - COVID-19 Cases in India](https://github.com/jitpavi/COVID-19-Week-Wise-Cases---Indian-State--Chloropeth-Visualisation/blob/master/Chloropeth%20Map%20-%20COVID-19%20Cases%20in%20India.JPG)
 

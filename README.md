@@ -40,11 +40,8 @@ This project will produce the chloropeth map to visualize the number of cases re
 7. Create a new  ISO Code Dataframe holding the columns of State code and State name.
 8. Perform Data Wrangling on the ISO code dataframe and sorted the column name "Code"
 9. Iterate through the rows of ISO Code dataframe and create a Dictionary object to hold the mappings of Code names with State Names.
-
 10.Access the open source geocode Json object and save it in a JSON object variable.
-
 11.Create a fig object which will have all the required data to be displayed in the output.
-
 12.Update the geocode property of the Figure object to make the output data more presentabe.
 13. Display the data and move the week slider in the bottom to observer the cases in each states.
 

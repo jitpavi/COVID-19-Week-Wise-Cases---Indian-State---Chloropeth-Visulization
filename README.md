@@ -49,8 +49,8 @@ This project will produce the chloropeth map to visualize the number of cases re
 13. Display the data and move the week slider in the bottom to observer the cases in each states.
 
 ## Expected Output:
-*As you can observe here, for every week starting from week 10 each state of India diplays the number of cases reported.
-For better understanding you can hover your mouse pointer over each state and see the figures.
+**_As you can observe here, for every week starting from week 10 each state of India diplays the number of cases reported.
+For better understanding you can hover your mouse pointer over each state and see the figures_**
 
  ![Chloropeth Map - COVID-19 Cases in India](https://github.com/jitpavi/COVID-19-Week-Wise-Cases---Indian-State--Chloropeth-Visualisation/blob/master/Chloropeth%20Map%20-%20COVID-19%20Cases%20in%20India.JPG)
 

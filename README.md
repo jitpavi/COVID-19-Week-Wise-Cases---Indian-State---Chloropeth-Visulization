@@ -61,7 +61,7 @@ _**
 * [COVID-19-Week-Wise-Cases---Indian-State--Chloropeth-Visualisationv1.0.py](https://github.com/jitpavi/COVID-19-Week-Wise-Cases---Indian-State--Chloropeth-Visualisation/blob/master/COVID-19-Week-Wise-Cases---Indian-State--Chloropeth-Visualisation%20v1.0.py)
 
 ## Versioning
-Code version - v1.0
+Code version - v1.1
 
 ## Author:
 

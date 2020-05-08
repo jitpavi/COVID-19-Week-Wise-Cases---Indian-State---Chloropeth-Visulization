@@ -1,4 +1,4 @@
-# Project Name - COVID-19-Week-Wise-Cases---Indian-State---Chloropeth-Visulization
+# Project Name - COVID-19-Week-Wise-Cases---Indian-State--Chloropeth-Visualisation
 
 #### -- Project Status: [Active]
 In process of adding the data reported from the district level of each respective States of India.

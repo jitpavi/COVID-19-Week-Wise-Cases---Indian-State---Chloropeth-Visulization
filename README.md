@@ -38,16 +38,18 @@ This project will produce the chloropeth map to visualize the number of cases re
 4. Create a new List of Tuples which out of the original Dataframe which will contains the values above 3 columns.
 5. Using the Tuples we create a master Dataframe which will be used to build the output.
 6. Parse the Date columns into Datetime object and convert the format into "Year-Week" type.
-7. Create a new  ISO Code Dataframe holding the columns of State code and State name.
-8. Perform Data Wrangling on the ISO code dataframe and sorted the column name "Code"
-9. Iterate through the rows of ISO Code dataframe and create a Dictionary object to hold the mappings of Code names with State Names.
+7. Create a groupby on the master dataframe to compute the cumulative cases reported week wise for each state/
+8. Create a new  ISO Code Dataframe holding the columns of State code and State name.
+9. Perform Data Wrangling on the ISO code dataframe and sorted the column name "Code"
+10. Iterate through the rows of ISO Code dataframe and create a Dictionary object to hold the mappings of Code names with State Names.
 
-10. Access the open source geocode Json object and save it in a JSON object variable.
+12. Access the open source geocode Json object and save it in a JSON object variable.
 
-11. Create a fig object which will have all the required data to be displayed in the output.
+12. Create a fig object which will have all the required data to be displayed in the output.
 
-12. Update the geocode property of the Figure object to make the output data more presentabe.
-13. Display the data and move the week slider in the bottom to observer the cases in each states.
+13. Update the geocode property of the Figure object to make the output data more presentabe.
+14. Display the data and move the week slider in the bottom to observer the cases in each states.
+
 
 ## Expected Output:
 **_As you can observe here, for every week starting from week 10 each state of India diplays the number of cases reported.
@@ -61,7 +63,7 @@ _**
 * [COVID-19-Week-Wise-Cases---Indian-State--Chloropeth-Visualisationv1.0.py](https://github.com/jitpavi/COVID-19-Week-Wise-Cases---Indian-State--Chloropeth-Visualisation/blob/master/COVID-19-Week-Wise-Cases---Indian-State--Chloropeth-Visualisation%20v1.0.py)
 
 ## Versioning
-Code version - v1.1
+Code version - v1.2
 
 ## Author:
 

@@ -1,7 +1,7 @@
 """
 Code Name: COVID-19-Week-Wise-Cases---Indian-State--Chloropeth-Visualisation
 Code Author: Jitin Pavithran
-Code Version: 1.1
+Code Version: 1.2
 Code Description: This project will produce the Chloropeth map to visualize the number of cases in each state of India starting from Week 10 of the year 2020.
 """
 
@@ -58,15 +58,25 @@ for i,r in ISO_Code.iterrows():
 master_df['State_Name'] = master_df['State_Code'].apply(lambda x:State_Code_Name_dict[x])
 master_df['State_Name'].replace('Odisha','Orissa',inplace=True)
 
+# Compute the cumulative value on cases reported for each State for that particular week
+master_group = master_df.groupby(['Detected_Date','State_Name']).agg({'Cases_Reported':'sum'})
+
+# Convert the index Detected_Date and State_Name into columns to be further used in Chloropeth plotting
+master_group = master_group.reset_index()
+
 # Save the Master Dataframe into a CSV file
 master_df.to_csv(r"C:\Users\jpavithr\OneDrive - Capgemini\Desktop\Automation Drive - Python training\Pandas\real python\Covid_statewise_chloropeth\state_wise_masterdata.csv")
+
+# Save the Master Dataframe group by into a CSV file
+master_group.to_csv(r"C:\Users\jpavithr\OneDrive - Capgemini\Desktop\Automation Drive - Python training\Pandas\real python\Covid_statewise_chloropeth\state_wise_masterdata_groupby.csv")
+
 
 # Access the JSON object holding the GEOCodes for each State of India
 repo_url = 'https://raw.githubusercontent.com/Subhash9325/GeoJson-Data-of-Indian-States/master/Indian_States'
 indian_state_geo = requests.get(repo_url).json()
 
 # Create Cholopeth figure object and providing all the required inputs taken from the Master Dataframe
-fig = px.choropleth(master_df,
+fig = px.choropleth(master_group,
                     geojson= indian_state_geo,
                     locations="State_Name",
                     color="Cases_Reported",
@@ -75,7 +85,7 @@ fig = px.choropleth(master_df,
                     hover_name="State_Name",
                     title = "Week-Wise COVID cases in Indian States",
                     scope="asia",
-                   color_continuous_scale=px.colors.sequential.PuRd)
+                    color_continuous_scale=px.colors.sequential.PuRd)
 
 # Tune how the geocode should display the final output map
 fig.update_geos(showcountries=False, showcoastlines=True, showland=True, fitbounds="locations",visible=False)
